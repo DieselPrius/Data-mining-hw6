@@ -49,3 +49,37 @@ algo = KNNBasic(sim_options = {'user_based': False }) #item based collaborative 
 perf = evaluate(algo, data,measures=['RMSE', 'MAE'])
 print_perf(perf)
 
+
+#part 14
+print("\n\n\n")
+algo = algo = KNNBasic(sim_options = {'name':'MSD','user_based': True }) #user based collaborative filtering
+perf = evaluate(algo, data,measures=['RMSE', 'MAE'])
+print_perf(perf)
+
+print("\n\n\n")
+algo = algo = KNNBasic(sim_options = {'name':'cosine','user_based': True }) #user based collaborative filtering
+perf = evaluate(algo, data,measures=['RMSE', 'MAE'])
+print_perf(perf)
+
+print("\n\n\n")
+algo = algo = KNNBasic(sim_options = {'name':'pearson','user_based': True }) #user based collaborative filtering
+perf = evaluate(algo, data,measures=['RMSE', 'MAE'])
+print_perf(perf)
+
+print("\n\n\n")
+algo = algo = KNNBasic(sim_options = {'name':'MSD','user_based': False }) #user based collaborative filtering
+perf = evaluate(algo, data,measures=['RMSE', 'MAE'])
+print_perf(perf)
+
+print("\n\n\n")
+algo = algo = KNNBasic(sim_options = {'name':'cosine','user_based': False }) #user based collaborative filtering
+perf = evaluate(algo, data,measures=['RMSE', 'MAE'])
+print_perf(perf)
+
+print("\n\n\n")
+algo = algo = KNNBasic(sim_options = {'name':'pearson','user_based': False }) #user based collaborative filtering
+perf = evaluate(algo, data,measures=['RMSE', 'MAE'])
+print_perf(perf)
+
+
+
